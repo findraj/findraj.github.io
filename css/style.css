@@ -8,33 +8,68 @@ body {
     top: 0;
     width: 100%;
     background-color: #f1f1f1;
+    z-index: 1000;
 }
 
-#skills ul {
-    list-style: none;
+#skills-icons {
     display: flex;
-    animation: scroll-horizontal 20s linear infinite;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-@keyframes scroll-horizontal {
-  0% {
-    left: 100%;
-  }
-
-  100% {
-    left: -100%;
-  }
+#aboutme {
+    box-sizing: border-box;
 }
 
-#skills img {
-    width: 50%;
+#skills-icons img {
+    min-width: 100px;
+    width: 10%;
+    transition: scale 0.5s;
 }
+
+#skills-icons img:hover {
+    scale: 1.2;
+    transition: scale 0.5s;
+}
+
+#skills-icons p {
+    display: none;
+    position: absolute;
+    font-weight: bold;
+    background-color: lightgrey;
+    padding: 10px 20px;
+    border-radius: 30px;
+}   
+
+#projects a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#projects div {
+    display: flex;
+    flex-direction: row;
+}
+
+#projects div p {
+    margin: auto 0;
+}
+
+#projects div img {
+    margin-right: 1%;
+    min-width: 100px;
+    width: 10%;
+}
+
+/****************************************************************/
 
 /* Media Queries */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
     /* mobile */
     body {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .main {
@@ -80,9 +115,21 @@ body {
         margin: 2px;
         background-color: black;
     }
+
+    #aboutme img {
+        width: 100%;
+    }
+
+    #skills-icons img:hover + p {
+        display: block;
+        transform: translateY(-100px);
+        right: 5%;
+    }
   }
   
-  @media screen and (min-width: 501px) {
+/****************************************************************/
+
+  @media screen and (min-width: 1001px) {
     /* laptop */
     body {
         font-size: 2rem;
@@ -118,6 +165,12 @@ body {
     #aboutme img {
         float: left;
         margin-right: 5%;
+        min-width: 300px;
         width: 20%;
+    }
+
+    #skills-icons img:hover + p {
+        display: block;
+        transform: translateY(-120px);
     }
   }
