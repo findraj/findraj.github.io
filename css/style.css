@@ -10,13 +10,33 @@ body {
     background-color: #f1f1f1;
 }
 
+#skills ul {
+    list-style: none;
+    display: flex;
+    animation: scroll-horizontal 20s linear infinite;
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+#skills img {
+    width: 50%;
+}
+
 /* Media Queries */
 @media screen and (max-width: 500px) {
     /* mobile */
     body {
         font-size: 1rem;
     }
-    
+
     .main {
         margin-top: 4rem;
         margin-left: 5%;
@@ -93,5 +113,11 @@ body {
 
     #navbar-menu {
         display: none;
+    }
+
+    #aboutme img {
+        float: left;
+        margin-right: 5%;
+        width: 20%;
     }
   }
