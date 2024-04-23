@@ -2,22 +2,88 @@
 <html lang = "en">
 <head>
     <title>My Page</title>
-    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/navigationButton.js"></script>
 </head>
 <body>
     <div class = "header">
-        <h1>My Page</h1>
+        <nav>
+            <div id = "navbar">
+                <ul>
+                    <li><a href = "#basic">Basic</a></li>
+                    <li><a href = "#skills">Skills</a></li>
+                    <li><a href = "#projects">Projects</a></li>
+                    <li><a href = "#education">Education</a></li>
+                    <li><a href = "#experience">Experience</a></li>
+                    <li><a href = "#languages">Languages</a></li>
+                </ul>
+            </div>
+            <div id = "navbar-menu">
+                <ul>
+                    <li><a href = "#basic" onclick="hideShow()">Basic</a></li>
+                    <li><a href = "#skills" onclick="hideShow()">Skills</a></li>
+                    <li><a href = "#projects" onclick="hideShow()">Projects</a></li>
+                    <li><a href = "#education" onclick="hideShow()">Education</a></li>
+                    <li><a href = "#experience" onclick="hideShow()">Experience</a></li>
+                    <li><a href = "#languages" onclick="hideShow()">Languages</a></li>
+                </ul>
+            </div>
+            <div id = "navbar-button"">
+                <button type="button" onclick="hideShow()">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        </nav>
     </div>
-    <div class = "navbar">
-        <a href = "index.html">Home</a>
-        <a href = "about.html">About</a>
-        <a href = "contact.html">Contact</a>
-    </div>
-    <div class = "content">
-        <h2>Home</h2>
-        <p>Welcome to my page!</p>
-    </div>
-    <div class = "footer">
-        <p>My Page &copy; 2021</p>
+    <div class = "main">
+        <section id = "basic">
+            <h1>Ján Findra</h1>
+            <p>My name is Ján Findra and I am a student at the BUT (Brno University of Technology) FIT (Faculty of Informatics). I am currently studying the second year of the bachelor's degree in the field of Informatics. I am interested in programming, web development, and hardware. I am also interested in the field of artificial intelligence and machine learning. I am constantly trying to improve my skills and learn new things. I am a responsible and reliable person who is able to work in a team as well as individually. I am also able to work under pressure and meet deadlines. I am looking for an internship or part-time job in the field of IT, where I can use my skills and knowledge and gain new experience.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>C/C++</li>
+                <li>C#</li>
+                <li>Python</li>
+                <li>PHP</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>bash</li>
+                <li>VHDL</li>
+                <li>OracleSQL</li>
+            </ul>
+        </section>
+        <section id = "projects">
+            <h1>Projects</h1>
+            <p>check my <a href="https://github.com/findraj">github</a></p>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>2022 - present: Brno University of Technology, Faculty of Informatics, Bachelor's degree, CZ</li>
+                <li>2013 - 2022: English language school, SK</li>
+                <li>2018 - 2022: Grammar school, SK</li>
+            </ul>
+        </section>
+        <section id="experience">
+            <h2>Work experience</h2>
+            <ul>
+                <li>Jun 2023 - Aug 2023: Ekofarm, SWE</li>
+                <li>Jun 2022 - Aug 2022: Logistic center, GER</li>
+                <li>Jul 2021 - Aug 2021: Gastronomy, GER</li>
+            </ul>
+        </section>
+        <section id = "languages">
+            <h2>Languages</h2>
+            <ul>
+                <li>Slovak - native</li>
+                <li>English - C1-C2 (state exam)</li>
+                <li>German - B1 (650+ day streak on Duolingo)</li>
+            </ul>
+        </section>
     </div>
 </html>
