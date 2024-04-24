@@ -67,6 +67,65 @@ body {
     width: 10%;
 }
 
+#timeline {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+
+#timeline div:nth-child(even) {
+    z-index: 100;
+    text-align: center;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    padding: 20px 20px;
+    box-shadow: #e1e1e1 0 0 10px;
+}
+
+#timeline div:nth-child(even)::before {
+    display: block;
+    position: absolute;
+    content: attr(id);
+}
+
+#timeline div:nth-child(4n)::before {
+    transform: translateY(-70px) translateX(-50%);
+}
+
+#timeline div:nth-child(4n+2)::before {
+    transform: translateY(30px) translateX(-50%);
+}
+
+.line {
+    display: block;
+    width: 20%;
+    transform: translateY(15px);
+    height: 10px;
+    background-color: #f1f1f1;
+    box-shadow: #f1f1f1 0 0 5px;
+}
+
+.line:first-child {
+    border-radius: 15px  0 0 15px;
+}
+
+.line:last-child {
+    border-radius: 0 15px 15px 0;
+}
+
+#timeline-content ul {
+    list-style: none;
+}
+
+#timeline-content ul li {
+    margin: 2% 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#timeline-content ul li div:first-child {
+    width: 20%;
+}
 /****************************************************************/
 
 /* Media Queries */
@@ -202,13 +261,20 @@ body {
         background-color: #f1f1f1;
     }
 
-    #education {
-        padding: 2% 5%;
+    #education > h2 {
+        padding: 2% 5% 0;
     }
 
-    #studies,
+    #timeline-content {
+        padding: 0 10%;
+    }
+
     #languages {
-        padding-left: 5%;
+        padding: 0 10% 2%;
+    }
+
+    #studies > h3 {
+        padding: 0 10%;
     }
 
     #experience {

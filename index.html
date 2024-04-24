@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <script src="js/navigationButton.js"></script>
+    <script src="js/timeline.js"></script>
 </head>
 <body>
     <div class = "header">
@@ -86,11 +87,33 @@
             <h2>Education</h2>
             <section id="studies">
                 <h3>Studies</h3>
-                <ul>
-                    <li>2022 - present: Brno University of Technology, Faculty of Informatics, Bachelor's degree, CZ</li>
-                    <li>2013 - 2022: English language school, SK</li>
-                    <li>2018 - 2022: Grammar school, SK</li>
-                </ul>
+                <div id="timeline">
+                    <div class="line"></div>
+                    <div id="2013"></div>
+                    <div class="line" id="line1"></div>
+                    <div id="2018"></div>
+                    <div class="line" id="line2"></div>
+                    <div id="2021"></div>
+                    <div class="line" id="line3"></div>
+                    <div id="2022"></div>
+                    <div class="line" id="line4"></div>
+                </div>
+                <div id="timeline-content">
+                    <ul>
+                        <li onmouseenter="universityEnter()" onmouseleave="universityLeave()">
+                            <div>2022 - present</div>
+                            <div>Brno University of Technology, Faculty of Informatics, Bachelor's degree, CZ</div>    
+                        </li>
+                        <li onmouseenter="grammarSchoolEnter()" onmouseleave="grammarSchoolLeave()">
+                            <div>2018 - 2022</div>
+                            <div>Grammar school, SK</div>
+                        </li>
+                        <li onmouseenter="languageSchoolEnter()" onmouseleave="languageSchoolLeave()">
+                            <div>2013 - 2021</div>
+                            <div>English language school, SK</div>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section id = "languages">
                 <h3>Languages</h3>
