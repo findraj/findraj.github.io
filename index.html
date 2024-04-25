@@ -7,6 +7,7 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <script src="js/navigationButton.js"></script>
     <script src="js/timeline.js"></script>
+    <script src="js/experience.js"></script>
 </head>
 <body>
     <div class = "header">
@@ -116,18 +117,27 @@
             <section id = "languages">
                 <h3>Languages</h3>
                 <ul>
-                    <li>Slovak - native</li>
-                    <li>English - C1-C2 (state exam)</li>
-                    <li>German - B1 (650+ day streak on Duolingo)</li>
+                    <li>
+                        <span>🇸🇰</span>
+                        Slovak - native
+                    </li>
+                    <li>
+                        <span>🇬🇧</span>
+                        English - C1-C2 (state exam)
+                    </li>
+                    <li>
+                        <span>🇩🇪</span>
+                        German - B1 (650+ day streak on Duolingo)
+                    </li>
                 </ul>
             </section>
         </section>
         <section id="experience">
             <h2>Work experience</h2>
             <ul>
-                <li>Jun 2023 - Aug 2023: Ekofarm, SWE</li>
-                <li>Jun 2022 - Aug 2022: Logistic center, GER</li>
-                <li>Jul 2021 - Aug 2021: Gastronomy, GER</li>
+                <li onmouseenter="ekofarmEnter()" onmouseleave="ekofarmLeave()">Jun 2023 - Aug 2023: Ekofarm, SWE</li>
+                <li onmouseenter="logisticsEnter()" onmouseleave="logisticsLeave()">Jun 2022 - Aug 2022: Logistic center, GER</li>
+                <li onmouseenter="gastronomyEnter()" onmouseleave="gastronomyLeave()">Jul 2021 - Aug 2021: Gastronomy, GER</li>
             </ul>
         </section>
     </div>
