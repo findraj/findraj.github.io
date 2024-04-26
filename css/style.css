@@ -154,6 +154,11 @@ body {
     min-width: 210px;
 }
 
+#languages {
+    padding: 2% 5%;
+    background-color: #f1f1f1;
+}
+
 #languages ul {
     list-style: none;
 }
@@ -169,17 +174,27 @@ body {
     margin-right: 2%;
 }
 
+#experience {
+    padding-top: 10px;
+}
+
 #experience ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 #experience li {
-    margin: 2% 0;
+    padding: 2% 5%;
 }
 
-#experience {
-    padding: 2% 5%;
+#experience li:hover {
     background-color: #f1f1f1;
+    opacity: 0.5;
+}
+
+#experience  > h2{
+    padding: 2% 5% 0;
 }
 
 /****************************************************************/
@@ -207,12 +222,21 @@ body {
         background-color: #e1e1e1;
         margin-top: 3rem;
         width: 100%;
-        height: 40%;
         font-size: 3rem;
      }
 
     #navbar-menu ul {
         list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #navbar-menu ul li {
+        padding: 10px 5%;
+    }
+
+    #navbar-menu ul li:hover {
+        background-color: #b1b1b1;
     }
 
     #navbar-menu ul li a {
@@ -265,23 +289,10 @@ body {
         gap: 10px;
     }
 
-    #languages {
-        padding: 0 5% 2%;
-    }
-
-    #experience ul {
-        padding: 0;
-    }
-
     #experience ul li {
         display: flex;
         flex-direction: column;
-        padding: 5% 0;
         gap: 10px;
-    }
-
-    #experience ul li div:last-child {
-        text-align: right;
     }
   }
   
