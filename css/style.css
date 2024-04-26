@@ -11,6 +11,17 @@ body {
     z-index: 1000;
 }
 
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
 #skills-icons {
     display: flex;
     flex-direction: row;
@@ -189,8 +200,7 @@ body {
 }
 
 #experience li:hover {
-    background-color: #f1f1f1;
-    opacity: 0.5;
+    background-color: rgba(255, 255, 255, 0.5)
 }
 
 #experience  > h2{
@@ -204,6 +214,11 @@ body {
     /* mobile */
     body {
         font-size: 1.5rem;
+    }
+
+    #logo {
+        height: 3rem;
+        width: 3rem;
     }
 
     .main > h1{
@@ -304,6 +319,11 @@ body {
         font-size: 2rem;
     }
 
+    #logo {
+        height: 5rem;
+        width: 5rem;
+    }
+
     #navbar ul {
         display: flex;
         flex-direction: row;
@@ -365,7 +385,7 @@ body {
     }
 
     #languages {
-        padding: 0 10% 2%;
+        padding: 2% 10%;
     }
 
     #studies > h3 {
@@ -377,7 +397,7 @@ body {
         flex-direction: row;
     }
 
-    #experience ul li div:first-child {
+    #experience ul li span:first-child {
         min-width: 400px;
     }
   } 
