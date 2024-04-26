@@ -207,6 +207,21 @@ body {
     padding: 2% 5% 0;
 }
 
+#contact {
+    padding: 2% 5%;
+    background-color: #d1d1d1;
+}
+
+#contact div {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact div span:first-child {
+    width: 50px;
+    height: 50px;
+}
+
 /****************************************************************/
 
 /* Media Queries */
