@@ -20,6 +20,11 @@ body {
 
 #aboutme {
     background-color: #f1f1f1;
+    padding: 2% 5% 5%;
+}
+
+#skills {
+    padding: 2% 5%;
 }
 
 #skills-icons img {
@@ -40,7 +45,12 @@ body {
     background-color: #e1e1e1;
     padding: 10px 20px;
     border-radius: 30px;
-}   
+}
+
+#projects {
+    padding: 2% 5%;
+    background-color: #f1f1f1;
+}
 
 #projects a {
     text-decoration: none;
@@ -167,6 +177,11 @@ body {
     margin: 2% 0;
 }
 
+#experience {
+    padding: 2% 5%;
+    background-color: #f1f1f1;
+}
+
 /****************************************************************/
 
 /* Media Queries */
@@ -176,8 +191,10 @@ body {
         font-size: 1.5rem;
     }
 
-    .main {
-        margin-top: 4rem;
+    .main > h1{
+        padding: 4rem 5% 0;
+        background-color: #f1f1f1;
+        margin: 0;
     }
 
     #navbar {
@@ -219,13 +236,52 @@ body {
     }
 
     #aboutme img {
-        width: 100%;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
     }
 
     #skills-icons img:hover + p {
         display: block;
         transform: translateY(-100px);
         right: 5%;
+    }
+
+    #education  > h2 {
+        padding: 2% 5% 0;
+    }
+
+    #studies > h3 {
+        padding: 0 5% 2%;
+    }
+
+    #timeline {
+        padding-top: 50px;
+    }
+    
+    #timeline-content ul li {
+        flex-direction: column;
+        padding: 5%;
+        gap: 10px;
+    }
+
+    #languages {
+        padding: 0 5% 2%;
+    }
+
+    #experience ul {
+        padding: 0;
+    }
+
+    #experience ul li {
+        display: flex;
+        flex-direction: column;
+        padding: 5% 0;
+        gap: 10px;
+    }
+
+    #experience ul li div:last-child {
+        text-align: right;
     }
   }
   
@@ -277,29 +333,16 @@ body {
         margin: 0;
     }
 
-    #aboutme {
-        padding: 2% 5% 5%;
-    }
-
     #aboutme img {
         float: left;
-        margin-right: 5%;
+        margin-right: 20px;
         min-width: 300px;
         width: 20%;
-    }
-
-    #skills {
-        padding: 2% 5%;
     }
 
     #skills-icons img:hover + p {
         display: block;
         transform: translateY(-120px);
-    }
-
-    #projects {
-        padding: 2% 5%;
-        background-color: #f1f1f1;
     }
 
     #education > h2 {
@@ -318,8 +361,12 @@ body {
         padding: 0 10% 2%;
     }
 
-    #experience {
-        padding: 2% 5%;
-        background-color: #f1f1f1;
+    #experience ul li {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #experience ul li div:first-child {
+        min-width: 400px;
     }
   } 
